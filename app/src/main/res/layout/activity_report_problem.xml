@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReportProblem">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please describe the issue:"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="text" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Choose type of issue:"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <RadioGroup
+        android:id="@+id/issueGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:checkedButton="@+id/personalIssue">
+
+        <RadioButton
+            android:id="@+id/personalIssue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Issue"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/publicIssue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Public Issue"
+            android:textSize="18sp" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="submitRequest"
+        android:text="Submit Problem" />
+
+</LinearLayout>

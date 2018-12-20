@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/reportIssue"
+            android:title="Report an Issue" />
+        <item
+            android:id="@+id/issuesFeed"
+            android:title="Issues Around Me" />
+        <item
+            android:id="@+id/shelterFinder"
+            android:title="Find a Shelter" />
+        <!--android:icon="@drawable/ic_menu_manage"-->
+    </group>
+
+    <item android:title="Preparation Checklists">
+        <menu>
+            <item
+                android:id="@+id/hurricane"
+                android:title="Hurricane" />
+            <item
+                android:id="@+id/tornado"
+                android:title="Tornado" />
+            <item
+                android:id="@+id/blizzard"
+                android:title="Blizzard" />
+            <item
+                android:id="@+id/flood"
+                android:title="Flood" />
+            <item
+                android:id="@+id/earthquake"
+                android:title="Earthquake" />
+        </menu>
+    </item>
+
+</menu>
